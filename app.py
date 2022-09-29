@@ -18,17 +18,6 @@ parser.add_argument('var1', type=str, help='variable 1')
 parser.add_argument('var2', type=str, help='variable 2')
 
 
-# @api.route('/<string:id>')
-# class HelloWorld(Resource):
-#     @api.doc(parser=parser)
-#     def get(self,id):
-#
-#         args = parser.parse_args()
-#         get_var1 = args['var1']
-#         get_var2 = args['var2']
-#         return 'Hello : ' + get_var1 + get_var2 + id
-
-
 @api.route("/hello")
 class HelloWorld(Resource):
     @api.doc(parser=parser)
